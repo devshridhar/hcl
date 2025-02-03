@@ -1,0 +1,27 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "BDD tests with Cucumber and Playwright",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require steps/**/*.ts --require-module ts-node/register --format progress",
+    "playwright-test": "playwright test"
+  },
+  "cucumber": {
+    "requireModule": [
+      "ts-node/register"
+    ],
+    "require": [
+      "./tests/steps/**/*.ts"
+    ],
+    "format": [
+      "progress"
+    ]
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "playwright": "^1.50.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

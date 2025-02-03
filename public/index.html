@@ -88,7 +88,7 @@
         <form id="login">
             <input type="email" id="loginEmail" placeholder="Email" required>
             <input type="password" id="loginPassword" placeholder="Password (min 3 chars)" required minlength="3">
-            <button type="submit">Login</button>
+            <button id="loginButton" type="submit">Login</button>
         </form>
         <p class="toggle" onclick="toggleForms()">Don't have an account? Register</p>
         <p id="loginMessage" class="message" style="color: red;"></p>
@@ -101,7 +101,7 @@
             <input type="text" id="registerName" placeholder="Full Name" required>
             <input type="email" id="registerEmail" placeholder="Email" required>
             <input type="password" id="registerPassword" placeholder="Password (min 3 chars)" required minlength="3">
-            <button type="submit">Register</button>
+            <button id="registerButton" type="submit">Register</button>
         </form>
         <p class="toggle" onclick="toggleForms()">Already have an account? Login</p>
         <p id="registerMessage" class="message" style="color: green;"></p>
