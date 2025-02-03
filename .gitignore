@@ -96,7 +96,6 @@ coverage/
 # CI/CD
 .travis.yml
 .circleci/
-.github/
 gitlab-ci.yml
 now.json
 vercel.json
